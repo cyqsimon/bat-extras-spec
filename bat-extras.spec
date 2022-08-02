@@ -51,6 +51,7 @@ _SHFMT_DL_URL="https://github.com/mvdan/sh/releases/download/v%{_shfmt_ver}/shfm
 
 mkdir shfmt-bin
 curl -Lfo "shfmt-bin/shfmt" "${_SHFMT_DL_URL}"
+chmod +x "shfmt-bin/shfmt"
 # bin in shfmt-bin
 
 %build
