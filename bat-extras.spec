@@ -82,12 +82,12 @@ install -Dpm 644 -t %{buildroot}%{_docdir}/%{name} doc/*
 %{_bindir}/batwatch
 %{_bindir}/batdiff
 %{_bindir}/prettybat
-%{_mandir}/batgrep
-%{_mandir}/batman
-%{_mandir}/batpipe
-%{_mandir}/batwatch
-%{_mandir}/batdiff
-%{_mandir}/prettybat
+%{_mandir}/man1/batgrep.1*
+%{_mandir}/man1/batman.1*
+%{_mandir}/man1/batpipe.1*
+%{_mandir}/man1/batwatch.1*
+%{_mandir}/man1/batdiff.1*
+%{_mandir}/man1/prettybat.1*
 %{_docdir}/%{name}/*
 
 %changelog
