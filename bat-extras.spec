@@ -10,7 +10,7 @@ URL:            https://github.com/eth-p/bat-extras
 Source0:        %{url}/archive/v%{version}.tar.gz
 
 Requires:       bat git man-db ripgrep
-BuildRequires:  bat
+BuildRequires:  bat git
 
 BuildArch:      noarch
 
