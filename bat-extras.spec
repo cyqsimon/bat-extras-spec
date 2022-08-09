@@ -93,7 +93,7 @@ install -Dpm 644 -t %{buildroot}%{_docdir}/%{name} doc/*
 %{_docdir}/%{name}/*
 
 %changelog
-* Tue Arg 09 2022 cyqsimon - 2022.07.27-2
+* Tue Aug 09 2022 cyqsimon - 2022.07.27-2
 - Build for `noarch`
 
 * Wed Aug 03 2022 cyqsimon - 2022.07.27-1
