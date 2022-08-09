@@ -2,7 +2,7 @@
 
 Name:           bat-extras
 Version:        2022.07.27
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Bash scripts that integrate bat with various command line tools
 
 License:        MIT
@@ -11,6 +11,8 @@ Source0:        %{url}/archive/v%{version}.tar.gz
 
 Requires:       bat git man-db ripgrep
 BuildRequires:  bat
+
+BuildArch:      noarch
 
 %description
 Bash scripts that integrate bat with various command line tools.
@@ -91,5 +93,8 @@ install -Dpm 644 -t %{buildroot}%{_docdir}/%{name} doc/*
 %{_docdir}/%{name}/*
 
 %changelog
+* Tue Arg 09 2022 cyqsimon - 2022.07.27-2
+- Build for `noarch`
+
 * Wed Aug 03 2022 cyqsimon - 2022.07.27-1
 - Release 2022.07.27
