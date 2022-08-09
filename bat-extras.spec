@@ -39,16 +39,18 @@ Bash scripts that integrate bat with various command line tools.
 
 # get static binaries of shfmt
 %global _shfmt_ver 3.5.1
-%ifarch x86_64
-    _ARCH=amd64
-%endif
-%ifarch aarch64
-    _ARCH=arm64
-%endif
-if [[ -z "${_ARCH}" ]]; then
-    echo "Unsupported architecture!"
-    exit 1
-fi
+case "$(uname -m)" in
+    x86_64)
+        _ARCH=amd64
+        ;;
+    aarch64)
+        _ARCH=arm64
+        ;;
+    *)
+        echo "Unsupported architecture!"
+        exit 1
+        ;;
+esac
 _SHFMT_DL_URL="https://github.com/mvdan/sh/releases/download/v%{_shfmt_ver}/shfmt_v%{_shfmt_ver}_linux_${_ARCH}"
 
 mkdir shfmt-bin
