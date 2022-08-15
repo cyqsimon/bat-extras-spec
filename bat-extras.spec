@@ -23,12 +23,14 @@ Bash scripts that integrate bat with various command line tools.
 - batman
   - Read system manual pages (man) using bat as the manual page formatter.
 - batpipe
-  - A less (and soon bat) preprocessor for viewing more types of files in the terminal.
+  - A less (and soon bat) preprocessor for viewing more types of files in the
+    terminal.
 - batwatch
   - Watch for changes in one or more files, and print them with bat.
   - Requirements: entr (optional)
 - batdiff
-  - Diff a file against the current git index, or display the diff between two files.
+  - Diff a file against the current git index, or display the diff between two
+    files.
   - Requirements: bat, delta (optional)
 - prettybat
   - Pretty-print source code and highlight it with bat.
