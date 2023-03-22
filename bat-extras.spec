@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name:           bat-extras
-Version:        2022.07.27
-Release:        2%{?dist}
+Version:        2023.03.21
+Release:        1%{?dist}
 Summary:        Bash scripts that integrate bat with various command line tools
 
 License:        MIT
@@ -40,7 +40,7 @@ Bash scripts that integrate bat with various command line tools.
 %autosetup
 
 # get static binaries of shfmt
-%global _shfmt_ver 3.5.1
+%global _shfmt_ver 3.6.0
 case "$(uname -m)" in
     x86_64)
         _ARCH=amd64
@@ -97,6 +97,10 @@ install -Dpm 644 -t %{buildroot}%{_docdir}/%{name} doc/*
 %{_docdir}/%{name}/*
 
 %changelog
+* Wed Mar 22 2023 cyqsimon - 2023.03.21-1
+- Release 2023.03.21
+- Bump shfmt bin version
+
 * Tue Aug 09 2022 cyqsimon - 2022.07.27-2
 - Build for `noarch`
 
