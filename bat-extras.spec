@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           bat-extras
-Version:        2023.09.19
+Version:        2024.02.12
 Release:        1%{?dist}
 Summary:        Bash scripts that integrate bat with various command line tools
 
@@ -97,6 +97,9 @@ install -Dpm 644 -t %{buildroot}%{_docdir}/%{name} doc/*
 %{_docdir}/%{name}/*
 
 %changelog
+* Wed Feb 14 2024 cyqsimon - 2024.02.12-1
+- Release 2024.02.12
+
 * Fri Sep 22 2023 cyqsimon - 2023.09.19-1
 - Release 2023.09.19
 
