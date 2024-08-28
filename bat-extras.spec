@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name:           bat-extras
-Version:        2024.06.01
-Release:        2%{?dist}
+Version:        2024.08.24
+Release:        1%{?dist}
 Summary:        Bash scripts that integrate bat with various command line tools
 
 License:        MIT
@@ -97,6 +97,9 @@ install -Dpm 644 -t %{buildroot}%{_docdir}/%{name} doc/*
 %{_docdir}/%{name}/*
 
 %changelog
+* Wed Aug 28 2024 cyqsimon - 2024.08.24-1
+- Release 2024.08.24
+
 * Sun Jun 02 2024 cyqsimon - 2024.06.01-2
 - Bump shfmt bin version to 3.8
 
